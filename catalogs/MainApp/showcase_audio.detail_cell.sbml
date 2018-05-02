@@ -1,0 +1,19 @@
+=begin cell
+
+=object youtube: style=youtube
+
+${title}
+${author}
+${youtube}
+${video-id}
+${main-tag}
+${tag-1}
+${tag-2}
+${tag-3}
+${tag-4}
+${tag-5}
+${userpic-url}
+${userpic-large-url}
+${payout-value}
+
+=end cell
