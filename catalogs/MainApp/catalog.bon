@@ -17,5 +17,5 @@
 		}
 	},
 
-    "orientations": ["landscape", "portrait"]
+    "orientation": ["landscape", "portrait"]
 }
