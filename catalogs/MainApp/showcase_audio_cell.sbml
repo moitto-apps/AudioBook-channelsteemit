@@ -1,5 +1,8 @@
 =begin cell
 
 ${title}
-
+${votes-count}
+${payout-value}
+${image-url}
+오디오북 ${number}
 =end cell
