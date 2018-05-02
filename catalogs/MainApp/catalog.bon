@@ -12,9 +12,8 @@
 	"subcatalogs":{
 		"home":{
     		"controller":"StoreView",
-	    	"hides-navibar":"yes",
     		"statusbar-style":"Default",
-    		"title":"Home"
+    		"title":"channelsteemit의 오디오북"
 		}
 	},
 
