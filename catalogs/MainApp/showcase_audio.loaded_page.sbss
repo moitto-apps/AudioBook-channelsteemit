@@ -4,18 +4,30 @@ import themes.sbss
 		autoplay=yes, control-hidden=no, info-hidden=yes, \
 		action-when-finished=next-page, params-when-finished="target=object,object=showcase.audio", \
 		action-when-not-available@embeded=noop, script-when-not-available@embeded=on_not_available, \
-		action-when-not-available=next-page, params-when-not-available="target=owner", \
-		margin="0 0 20dp 0"
+		action-when-not-available=next-page, params-when-not-available="target=owner"
+
+#section_contents: width=1pw, height="1ph-1pw*(9/16)"
 
 #btn_tags: label-font-family=$SANSSERIF_MEDIUM, label-font-size=0.9, label-color=$THEME_COLOR_101, \
-		content-padding="0 2dp", content-background-color=$THEME_COLOR_01, content-border-radius=2dp
-#label_vote: width=1pw, height=30dp, align=left, \
+		content-padding="0 3dp", content-background-color=$THEME_COLOR_01, content-border-radius=2dp
+#label_vote: height=30dp, align=left, \
 			font-family=$SANSSERIF_MEDIUM, font-size=0.9, text-color=$THEME_COLOR_108, text-align=left
-#label_date: width=1pw, height=30dp, align=right, \
+#label_date: width="1pw-40dp", height=30dp, align=right, \
 			font-family=$SANSSERIF_MEDIUM, font-size=0.9, text-color=$THEME_COLOR_108, text-align=right, margin="-30dp 0 0 0"
-#img_userpic: width=30dp, height=30dp, content-border-radius=15dp
 
-/page: font-family=$SANSSERIF_MEDIUM, text-color=$THEME_COLOR_108, text-align=left, margin="0 0 (1eb+20dp) 0"
-/page/header: margin=20dp
-/page/header/title: text-color=$THEME_COLOR_107, font-size=1.3, text-align=left, line-break-mode=word-wrap, margin="0 0 20dp 0"
-/page/body: text-color=$THEME_COLOR_108, font-size=1.2, text-align=left, line-spacing=0.4em, paragraph-spacing=0.4em, margin="0 20dp"
+#btn_back: width=40dp, height=40dp, image=subview_btn_pageback.png, \
+		position=absolute, gravity=bottom-left, x=10dp, y=-10dp
+
+#btn_vote: width=40dp, height=40dp, image=subview_btn_vote.png, \
+		position=absolute, gravity=bottom-right, x=-10dp, y=-10dp
+
+/page: font-family=$SANSSERIF_MEDIUM, text-color=$THEME_COLOR_108, text-align=left, \
+		page-background-color=$THEME_COLOR_02
+/page/contents: display=none, padding="20dp 20dp (60dp+1eb) 20dp"
+/page/contents/header: margin="0 0 20dp 0"
+/page/contents/header/title: text-color=$THEME_COLOR_107, font-size=1.3, text-align=left, \
+				line-spacing=0.3em, line-break-mode=word-wrap, \
+				margin="0 0 20dp 0"
+/page/contents/header/tags:  
+/page/contents/body: text-color=$THEME_COLOR_108, font-size=1.2, line-spacing=0.4em, paragraph-spacing=0.4em, \
+				padding=10dp, background-color=$THEME_COLOR_00

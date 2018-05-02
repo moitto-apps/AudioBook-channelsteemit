@@ -1,8 +1,10 @@
 =begin navibar
 
 =object button: type=back, action=subview-back, style=btn_back
-=object image: image-url="${userpic-url}", style=img_userpic
-=object label: type=title, text="Info", style=label_title
+
+=begin title
+=(object image: image-url="https://steemitimages.com/u/channelsteemit/avatar/small", style=img_userpic)= =(object label: type=title, text="channelsteemit의 오디오북", style=label_title)=
+=end title
 
 =end navibar
 

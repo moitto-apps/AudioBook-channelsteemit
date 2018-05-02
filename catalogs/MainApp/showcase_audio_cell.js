@@ -7,7 +7,7 @@ function feed_post() {
 	steemjs_get_content($data["author"], $data["permlink"], function(content) {
 		bundle = {};
 
-		bundle["title"] = content["title"];
+		//bundle["author"] = content["title"];
 		bundle["body"] = content["body"];
 
 		var meta = JSON.parse(content["json_metadata"]);

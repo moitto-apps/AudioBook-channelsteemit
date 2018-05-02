@@ -2,10 +2,12 @@ import themes.sbss
 
 #btn_back: width=44dp, height=44dp, position=absolute, gravity=left-bottom, \
         image=subview_btn_back.png
-#label_title: width=0.9pw, height=44dp, position=absolute, gravity=top, y=1sbh, \
-            font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_100, text-align=center
+#label_title: height=30dp, \
+            font-family=$SANSSERIF_LIGHT, text-color=$THEME_COLOR_100, text-align=left
+#img_userpic: width=30dp, height=30dp, content-border-radius=15dp
 
-/navibar: page-background-color=$THEME_COLOR_00
+/navibar: page-background-color=$THEME_COLOR_00, text-align=center
+/navibar/title: display=block, position=absolute, gravity=bottom, y=-7dp
 
 if $SCREEN_WIDTH > 5
     #label_title: font-size=1.4
