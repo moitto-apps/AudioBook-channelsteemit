@@ -27,6 +27,7 @@ function feed_list(keyword, location, length, sortkey, sortorder, handler) {
 				var userpic_url       = __fetch_userpic_url_in_discussion(discussion);
 				var userpic_large_url = __fetch_userpic_large_url_in_discussion(discussion);;
 				var payout_value      = __fetch_payout_value_in_discussion(discussion).toFixed(2);
+				var source_url 		  = __fetch_audio_book_source_url_in_discussion(discussion);
 
 				var identifer = "S_FEEDS_" + discussion["author"] + "_" + discussion["permlink"];
 				var title = discussion["title"];
@@ -38,6 +39,7 @@ function feed_list(keyword, location, length, sortkey, sortorder, handler) {
 						"permlink": discussion["permlink"],
 						"title": __fetch_audio_book_title(title),
 						"number": __fetch_audio_book_number(title),
+						"source-url": source_url,
 						"image-url":image_url,
 						"userpic-url":userpic_url,
 						"userpic-large-url":userpic_large_url,
@@ -67,6 +69,22 @@ function __is_audio_book(title) {
 	}
 
 	return false;
+}
+
+function __fetch_audio_book_source_url_in_discussion(discussion) {
+	// https://steemit.com/kr/@pediatrics/2aascf
+	var links = JSON.parse(discussion["json_metadata"])["links"];
+	var source_url = "";
+
+	links.forEach(function(link) {
+		if (link.includes("steemit.com")) {
+			source_url = link;
+
+			return;
+		}
+	})
+
+	return source_url;
 }
 
 function __fetch_audio_book_number(title) {

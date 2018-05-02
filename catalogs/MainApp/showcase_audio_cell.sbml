@@ -5,4 +5,5 @@ ${votes-count}
 ${payout-value}
 ${image-url}
 오디오북 ${number}
+원문 ${source-url}
 =end cell
