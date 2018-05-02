@@ -1,5 +1,4 @@
 import themes.sbss
 
-
 #cell_video: alternate-name=audio.detail, display-unit="${id}", id=cell.detail.${id},\
 			width=1pw, height=1ph

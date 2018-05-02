@@ -67,6 +67,7 @@ function __get_youtube_url(links) {
 function __reload_cell() {
 	if (bundle) {
 		view.data("display-unit", bundle);
+		view.data("environment", {"alternate-name": "audio.loaded"})
 		view.action("reload");
 	}
 }
