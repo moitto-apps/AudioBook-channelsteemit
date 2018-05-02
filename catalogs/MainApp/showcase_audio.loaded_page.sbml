@@ -2,33 +2,23 @@
 
 =object youtube: style=youtube
 
+=begin header
+=begin title
 ${title}
+=end title
 
+=(object button: label="${tag-1}", style=btn_tags)= =(object button: label="${tag-2}", style=btn_tags)= =(object button: label="${tag-3}", style=btn_tags)= =(object button: label="${tag-4}", style=btn_tags)= =(object button: label="${tag-5}", style=btn_tags)=
 
+=object label: text="보팅 ${payout-value}", style=label_vote
 
+=object label: type=date, format=ago, source-format="yyyy-MM-dd'T'HH:mm:ss", source-timezone=GMT, \
+                text="${created-at}", style=label_date
 
+=object image: image-url="${userpic-url}", style=img_userpic
+=end header
 
-
-
-
-
-
-
-
-
-
-
-
-${title}
-${author}
-${tag-1}
-${tag-2}
-${tag-3}
-${tag-4}
-${tag-5}
-${userpic-url}
-${votes-count}
-${payout-value}
+=begin body
 ${body}
+=end body
 
 =end page

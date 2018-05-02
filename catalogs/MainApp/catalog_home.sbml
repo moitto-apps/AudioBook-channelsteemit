@@ -1,5 +1,8 @@
 =begin home
 
-=object showcase: selectable=yes, action-when-selected=page, params-when-selected="display-unit=\"${id}\"", style=showcase_audio
+=object showcase: selectable=yes, \
+				action-when-selected=page, params-when-selected="display-unit=\"${id}\", has-own-navibar=\"yes\"", \
+				histrory-enabled=yes, history="${id}", \
+				style=showcase_audio
 
 =end home

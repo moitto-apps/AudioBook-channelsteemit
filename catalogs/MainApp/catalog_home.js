@@ -31,7 +31,7 @@ function on_loaded() {
 						"payout-value":"$" + payout_value.toString(),
 						"main-tag":discussion["category"],
             		    "created-at":discussion["created"], 
-            		    "hides-navibar":"yes"
+            		    "hides-navibar":"no"
 					});
 				}
 			}
