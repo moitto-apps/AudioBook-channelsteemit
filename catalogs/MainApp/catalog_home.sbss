@@ -2,7 +2,7 @@ import themes.sbss
 
 #showcase_audio: id=showcase.audio, name=audio, data-script=feed_list, \
 				width=1pw, height=1ph, position=abs, gravity=center, \
-				row-count=1, cell-size="1pw, 1ph", page-enabled=yes
+				column-count=1, cell-size="1pw, 300dp"
 
 /home: page-background-color=$WHITE_COLOR, script-when-loaded=on_loaded
 

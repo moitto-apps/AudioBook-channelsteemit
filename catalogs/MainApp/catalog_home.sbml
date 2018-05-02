@@ -1,5 +1,5 @@
 =begin home
 
-=object showcase: style=showcase_audio
+=object showcase: selectable=yes, action-when-selected=page, params-when-selected="display-unit=\"${id}\"", style=showcase_audio
 
 =end home

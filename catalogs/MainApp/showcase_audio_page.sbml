@@ -1,4 +1,4 @@
-=begin cell
+=begin page
 
 =object youtube: style=youtube
 
@@ -31,4 +31,4 @@ ${votes-count}
 ${payout-value}
 ${body}
 
-=end cell
+=end page
