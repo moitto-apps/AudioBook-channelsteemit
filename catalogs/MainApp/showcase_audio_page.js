@@ -3,7 +3,7 @@ include("config.js");
 
 var bundle = null;
 
-function feed_post() {
+function on_loaded() {
 	steemjs_get_content($data["author"], $data["permlink"], function(content) {
 		bundle = {};
 
